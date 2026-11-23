@@ -1,6 +1,6 @@
 <template>
   <div class="weather">
-    <span>📍 中国 · 成都</span>
+    <span>📍 成都</span>
     <span>✨ 保持热爱，奔赴山海</span>
   </div>
 </template>
