@@ -43,7 +43,7 @@
 <script setup>
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑选并在此处引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vicons/fa"; // 注意使用正确的类别
+import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode, Github } from "@vicons/fa"; // 已加入 Github
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -70,6 +70,7 @@ const siteIcon = {
   Book,
   Fire,
   LaptopCode,
+  Github, // 已加入 Github
 };
 
 // 链接跳转
@@ -142,17 +143,14 @@ onMounted(() => {
       justify-content: center;
       padding: 0 10px;
       animation: fade 0.5s;
-
       &:hover {
         transform: scale(1.02);
         background: rgb(0 0 0 / 40%);
         transition: 0.3s;
       }
-
       &:active {
         transform: scale(1);
       }
-
       .name {
         font-size: 1.1rem;
         margin-left: 8px;
